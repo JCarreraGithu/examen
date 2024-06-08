@@ -1,0 +1,105 @@
+.main-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.gif-container {
+  position: absolute;
+  left: 90px; /* Ajusta este valor según sea necesario */
+  top: 45%; /* Ajusta este valor según sea necesario */
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.gif {
+  width: 200px;
+  height: 400px ;
+}
+
+.content {
+  padding: 50px 20px;
+  margin-left: 320px; /* Añadir espacio para el GIF */
+}
+
+.intro {
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #f06;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #d05;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 50%;
+  animation: slideInFromTop 1s ease forwards;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.intro p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+  animation: slideInLeft 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

@@ -1,0 +1,24 @@
+<div class="main-container">
+  <div class="gif-container">
+    <img src="https://i.gifer.com/Paz.gif" alt="GIF animado" class="gif">
+  </div>
+  <header class="header">
+    <div class="logo"><app-navegacion></app-navegacion></div>
+    <nav class="navbar">
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="intro text-center mt-5" *ngIf="showIntroduction">
+      <h1>BIENVENIDOS A MI PERFIL</h1>
+      <p>A continuacion una breve decripcion.</p>
+      <p>
+        Pagina web diseñada para mostrar mi perfil como ingeniero y mi hoja de vida, aqui encontraras informacion valiosa sobre mi
+      </p>
+    </div>
+    <div class="image d-flex justify-content-center mt-5" *ngIf="showIntroduction">
+      <img src="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg" class="img-fluid rounded-circle">
+    </div>
+    <router-outlet></router-outlet>
+  </main>
+</div>

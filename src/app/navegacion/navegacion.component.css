@@ -1,0 +1,12 @@
+nav {
+  text-align: center; /* Para centrar los botones */
+}
+
+button {
+  padding: 25px 35px; /* Ajusta el padding para hacer los botones más grandes */
+  border: none; /* Quita el borde */
+  border-radius: 0150px; /* Hace que las esquinas sean ovaladas */
+  background-color: #f0f0f0; /* Color de fondo */
+  margin: 10px; /* Ajusta el margen entre los botones */
+  font-size: 18px; /* Tamaño de la letra */
+}
